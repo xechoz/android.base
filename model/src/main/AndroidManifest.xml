@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="xyz.xechoz.app.model">
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+
+
+        <provider
+            android:exported="true"
+            android:permission="xyz.xechoz.app.permission.READ_NODE"
+            android:authorities="xyz.xechoz.app.provider"
+            android:label="node provider"
+            android:name="xyz.xechoz.app.model.DataProvider"/>
+    </application>
+
+</manifest>
