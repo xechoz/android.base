@@ -1,0 +1,38 @@
+//apply plugin: 'com.android.library'
+
+buildscript {
+
+}
+
+android {
+    aaptOptions {
+        cruncherEnabled true
+        cruncherProcesses 8
+    }
+
+    compileOptions {
+        incremental true
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    dexOptions {
+        preDexLibraries true
+        threadCount 64
+        maxProcessCount 8
+        javaMaxHeapSize '6G'
+        jumboMode true
+    }
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armabi-v7a'
+        }
+    }
+}
