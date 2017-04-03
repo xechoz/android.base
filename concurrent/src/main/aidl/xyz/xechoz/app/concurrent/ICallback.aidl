@@ -2,7 +2,8 @@
 package xyz.xechoz.app.concurrent;
 
 // Declare any non-default types here with import statements
+import xyz.xechoz.app.concurrent.model.Response;
 
-interface IPost {
-    void hello(String message);
+interface ICallback {
+    void onResponse(in Response response);
 }

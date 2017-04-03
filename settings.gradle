@@ -1,1 +1,1 @@
-include ':app', ':security', ':concurrent', ':model'
+include ':app', ':security', ':concurrent', ':model', ':common'
