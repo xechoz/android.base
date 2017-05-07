@@ -23,11 +23,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-<<<<<<< HEAD
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.3-alpha', {
-=======
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
->>>>>>> 0a62dd6... add content provider router api
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.1.1'
