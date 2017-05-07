@@ -7,5 +7,5 @@ package xyz.xechoz.app.common.ui;
  * 文档:
  */
 
-public class activity {
+public class BaseActivity {
 }
